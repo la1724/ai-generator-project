@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Generator</title>
   </head>
@@ -13,7 +16,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="quote-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the quote"
@@ -25,11 +28,7 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="quote">
-          Believe you can and you're halfway there.
-          <br />
-          Theodore Roosevelt
-        </div>
+        <div class="quote" id="quote"></div>
       </main>
 
       <footer>
