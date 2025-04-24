@@ -13,7 +13,7 @@ function generateQuote(event) {
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "974of49bec37483e3t4b02c41600e8ea";
   let context =
-    " Your mission is to generate maximum of 4 line quote in basic HTML and separate each line with a <br />. Make sure to follow the user instructions.  Provide an author of the quote inside a <strong> element at the end of the quote and NOT at the beginning";
+    " Your mission is to generate maximum of 4 line quote  and separate each line with a <br />. Make sure to follow the user instructions.  Provide an author of the quote inside a <strong> element at the end of the quote and NOT at the beginning";
   let prompt = `User instructions: Generate a quote about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
